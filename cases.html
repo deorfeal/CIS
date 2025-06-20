@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container">
+            <div class="topbar__inner">
+                <a class="topbar__logo logo" href="#">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                <div class="topbar__lang lang">
+                    <div class="lang__current">
+                        <span>
+                            RU
+                        </span>
+                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z" fill="#212329" />
+                        </svg>
+                    </div>
+                    <ul class="lang__list lang-list">
+                        <li class="lang-list__item lang-item">
+                            <a class="lang-item__link" href="#">
+                                Қаз
+                            </a>
+                        </li>
+                        <li class="lang-list__item lang-item">
+                            <a class="lang-item__link" href="#">
+                                Рус
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="topbar__menu menu">
+                    <ul class="menu__list menu-list">
+                        <li class="menu-list__item menu-item">
+                            <div class="menu-item__dropdown dropdown">
+                                <div class="dropdown__head">
+                                    <span>
+                                        О компании
+                                    </span>
+                                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z"
+                                            fill="#212329" />
+                                    </svg>
+                                </div>
+                                <ul class="dropdown__list dropdown-list">
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Клиенты
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Партнёры
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Оборудование
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Безопасность и качество
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <div class="menu-item__dropdown dropdown">
+                                <div class="dropdown__head">
+                                    <span>
+                                        Направления деятельности
+                                    </span>
+                                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z"
+                                            fill="#212329" />
+                                    </svg>
+                                </div>
+                                <ul class="dropdown__list dropdown-list">
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Гидроразрыв пластов
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Многостадийный ГРП
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Инженерное сопровождение ГРП
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <a class="menu-item__link menu-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <a class="menu-item__link menu-link" href="#">
+                                Кейсы
+                            </a>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <a class="menu-item__link menu-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="topbar__mail mail" href="mailto:info@cis.kz">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.8567 1.54688H1.14185C0.965969 1.54688 0.801311 1.59012 0.652344 1.66139L6.47388 7.48292L7.77868 6.22896C7.77868 6.22896 7.77878 6.22883 7.77881 6.22878C7.77883 6.22873 7.77893 6.22868 7.77893 6.22868L12.3464 1.66149C12.1974 1.59017 12.0326 1.54688 11.8567 1.54688Z"
+                            fill="#A31E08" />
+                        <path
+                            d="M12.8841 2.20312L8.58594 6.5011L12.884 10.7991C12.9553 10.6502 12.9985 10.4855 12.9985 10.3096V2.69245C12.9985 2.51667 12.9554 2.35204 12.8841 2.20312Z"
+                            fill="#A31E08" />
+                        <path
+                            d="M0.114512 2.20312C0.0432402 2.35209 0 2.51675 0 2.69263V10.3098C0 10.4856 0.0431895 10.6503 0.11441 10.7992L4.41261 6.50122L0.114512 2.20312Z"
+                            fill="#A31E08" />
+                        <path
+                            d="M8.04833 7.03911L6.74335 8.29323C6.66896 8.36763 6.57151 8.40482 6.47408 8.40482C6.37666 8.40482 6.27918 8.36763 6.20482 8.29323L4.95062 7.03906L0.652344 11.3371C0.801336 11.4084 0.966096 11.4517 1.14203 11.4517H11.8569C12.0328 11.4517 12.1974 11.4084 12.3464 11.3372L8.04833 7.03911Z"
+                            fill="#A31E08" />
+                    </svg>
+                    <span>
+                        info@cis.kz
+                    </span>
+                </a>
+                <a class="topbar__phone phone" href="tel:+77122317437">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4434_3691)">
+                            <path
+                                d="M12.6442 9.54069L10.8301 7.7265C10.1821 7.07858 9.08066 7.33777 8.82149 8.18005C8.62711 8.76321 7.97919 9.08717 7.39606 8.95756C6.10021 8.6336 4.35081 6.94899 4.02685 5.58835C3.83247 5.00519 4.22122 4.35727 4.80436 4.16292C5.64666 3.90375 5.90583 2.80227 5.2579 2.15435L3.44372 0.34016C2.92538 -0.113387 2.14787 -0.113387 1.69432 0.34016L0.463262 1.57122C-0.767795 2.86707 0.592847 6.30107 3.63809 9.34631C6.68334 12.3916 10.1173 13.817 11.4132 12.5211L12.6442 11.2901C13.0978 10.7717 13.0978 9.99424 12.6442 9.54069Z"
+                                fill="#A31E08" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_4434_3691">
+                                <rect width="13" height="13" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span>
+                        +7 (7122) 31 74 37
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__head head head--margened">
+                <div class="head__bg head-bg">
+                    <picture class="head-bg__img">
+                        <img src="images/head-img-1.jpg" alt="img">
+                    </picture>
+                </div>
+                <div class="container">
+                    <div class="head__inner">
+                        <div class="head__trail trail">
+                            <ul class="trail__list trail-list">
+                                <li class="trail-list__item trail-item">
+                                    <a class="trail-item__link trail-link" href="#">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4431_42203)">
+                                                <path
+                                                    d="M12.7817 5.81L6.949 0.495292C6.69298 0.261978 6.30692 0.262003 6.05101 0.495266L0.218309 5.81002C0.0132296 5.9969 -0.0545125 6.28483 0.0456788 6.54353C0.145895 6.80223 0.389899 6.96938 0.667342 6.96938H1.59892V12.2943C1.59892 12.5054 1.77011 12.6766 1.98123 12.6766H5.17826C5.38938 12.6766 5.56056 12.5055 5.56056 12.2943V9.06118H7.43952V12.2943C7.43952 12.5055 7.6107 12.6766 7.82182 12.6766H11.0187C11.2298 12.6766 11.401 12.5055 11.401 12.2943V6.96938H12.3328C12.6102 6.96938 12.8542 6.80221 12.9544 6.54353C13.0545 6.2848 12.9867 5.9969 12.7817 5.81Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M11.3018 1.08594H8.73438L11.6841 3.7681V1.46822C11.6841 1.2571 11.513 1.08594 11.3018 1.08594Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4431_42203">
+                                                    <rect width="13" height="13" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            Главная
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="trail-list__item trail-item">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.8082 6.46686L7.47455 10.8006C7.35085 10.9243 7.18597 10.9922 7.01017 10.9922C6.83417 10.9922 6.66939 10.9242 6.54569 10.8006L6.15223 10.407C6.02862 10.2835 5.96052 10.1185 5.96052 9.94264C5.96052 9.76683 6.02862 9.5963 6.15223 9.47279L8.6804 6.93905H0.648286C0.286143 6.93905 0 6.65554 0 6.2933V5.73692C0 5.37468 0.286143 5.06258 0.648286 5.06258H8.70908L6.15232 2.5147C6.02872 2.391 5.96062 2.23051 5.96062 2.05461C5.96062 1.8789 6.02872 1.71607 6.15232 1.59247L6.54578 1.20018C6.66949 1.07647 6.83427 1.00906 7.01027 1.00906C7.18607 1.00906 7.35095 1.07735 7.47465 1.20105L11.8083 5.53468C11.9323 5.65877 12.0005 5.82443 12 6.00052C12.0004 6.17721 11.9323 6.34296 11.8082 6.46686Z"
+                                            fill="white" />
+                                    </svg>
+                                    <span>
+                                        Кейсы и истории успеха
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="head__titling head-titling">
+                            <h1 class="head-titling__title">
+                                Кейсы и истории успеха
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__description description">
+                <div class="container">
+                    <div class="description__inner">
+                        <div class="description__titling description-titling">
+                            <h2 class="description-titling__title">
+                                Задача
+                            </h2>
+                        </div>
+                        <div class="description__content description-content">
+                            <p class="description-content__text">
+                                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности
+                                позволяет оценить значение существенных финансовых и административных условий. Таким
+                                образом консультация с широким активом позволяет оценить значение дальнейших направлений
+                                развития. Идейные соображения высшего порядка. Повседневная практика показывает, что
+                                дальнейшее развитие различных форм деятельности позволяет оценить значение существенных
+                                финансовых и административных условий. Таким образом консультация с широким активом
+                                позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего
+                                порядка.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__description description">
+                <div class="container">
+                    <div class="description__inner">
+                        <div class="description__titling description-titling">
+                            <h2 class="description-titling__title">
+                                Результат
+                            </h2>
+                        </div>
+                        <div class="description__content description-content">
+                            <p class="description-content__text">
+                                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности
+                                позволяет оценить значение существенных финансовых и административных условий. Таким
+                                образом консультация с широким активом позволяет оценить значение дальнейших направлений
+                                развития. Идейные соображения высшего порядка. Повседневная практика показывает, что
+                                дальнейшее развитие различных форм деятельности позволяет оценить значение существенных
+                                финансовых и административных условий. Таким образом консультация с широким активом
+                                позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего
+                                порядка.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__description description">
+                <div class="container">
+                    <div class="description__inner">
+                        <div class="description__titling description-titling">
+                            <h2 class="description-titling__title">
+                                Галерея проекта
+                            </h2>
+                        </div>
+                        <div class="description__content description-content">
+                            <div class="description-content__gallery gallery">
+                                <div class="gallery__swiper gallery-swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="gallery-swiper__slide gallery-slide swiper-slide">
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-1.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-2.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-2.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-3.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-3.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="gallery-swiper__slide gallery-slide swiper-slide">
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-1.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-2.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-2.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-3.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-3.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="gallery-swiper__slide gallery-slide swiper-slide">
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-1.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-2.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-2.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                            <a class="gallery-slide__item gallery-item" href="images/gallery-img-3.jpg"
+                                                data-fancybox="gallery">
+                                                <picture class="gallery-item__img">
+                                                    <img src="images/gallery-img-3.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-swiper__navigation navigation">
+                                        <div class="navigation__arrows arrows">
+                                            <div class="arrows__arrow arrow arrow--blue arrow--prev">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.95713e-09 18.4999L5 13L5 17.4175L5 19.5824L5 24L7.95713e-09 18.4999Z"
+                                                        fill="#001E88" />
+                                                    <line y1="-0.5" x2="31" y2="-0.5"
+                                                        transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 5 18)"
+                                                        stroke="#001E88" />
+                                                </svg>
+                                            </div>
+                                            <div class="arrows__arrow arrow arrow--blue arrow--next">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#001E88" />
+                                                    <line x1="31" y1="18.5" x2="-4.37114e-08" y2="18.5"
+                                                        stroke="#001E88" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__description description">
+                <div class="container">
+                    <div class="description__inner">
+                        <div class="description__titling description-titling">
+                            <h2 class="description-titling__title">
+                                Видео
+                            </h2>
+                        </div>
+                        <div class="description__content description-content">
+                            <div class="description-content__videos videos">
+                                <div class="videos__swiper videos-swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="videos-swiper__slide videos-slide swiper-slide">
+                                            <a class="videos-slide__video video" href="videos/video.mp4"
+                                                data-fancybox="videos">
+                                                <div class="video__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_4434_22253)">
+                                                            <path
+                                                                d="M43.7699 23.0794L11.3357 0.735666C10.9924 0.49994 10.5472 0.475362 10.1804 0.666401C9.81243 0.859674 9.58203 1.23952 9.58203 1.65511V46.3426C9.58203 46.7582 9.81243 47.1392 10.1804 47.3324C10.3437 47.4173 10.5226 47.4598 10.7005 47.4598C10.923 47.4598 11.1445 47.3928 11.3357 47.2621L43.7699 24.9183C44.073 24.7094 44.2531 24.3664 44.2531 23.9989C44.2531 23.6313 44.0719 23.2883 43.7699 23.0794Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_4434_22253">
+                                                                <rect width="46.9726" height="46.9208" fill="white"
+                                                                    transform="translate(0.632812 0.539062)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <picture class="video__img">
+                                                    <img src="images/videos-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="videos-swiper__slide videos-slide swiper-slide">
+                                            <a class="videos-slide__video video" href="videos/video.mp4"
+                                                data-fancybox="videos">
+                                                <div class="video__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_4434_22253)">
+                                                            <path
+                                                                d="M43.7699 23.0794L11.3357 0.735666C10.9924 0.49994 10.5472 0.475362 10.1804 0.666401C9.81243 0.859674 9.58203 1.23952 9.58203 1.65511V46.3426C9.58203 46.7582 9.81243 47.1392 10.1804 47.3324C10.3437 47.4173 10.5226 47.4598 10.7005 47.4598C10.923 47.4598 11.1445 47.3928 11.3357 47.2621L43.7699 24.9183C44.073 24.7094 44.2531 24.3664 44.2531 23.9989C44.2531 23.6313 44.0719 23.2883 43.7699 23.0794Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_4434_22253">
+                                                                <rect width="46.9726" height="46.9208" fill="white"
+                                                                    transform="translate(0.632812 0.539062)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <picture class="video__img">
+                                                    <img src="images/videos-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="videos-swiper__slide videos-slide swiper-slide">
+                                            <a class="videos-slide__video video" href="videos/video.mp4"
+                                                data-fancybox="videos">
+                                                <div class="video__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_4434_22253)">
+                                                            <path
+                                                                d="M43.7699 23.0794L11.3357 0.735666C10.9924 0.49994 10.5472 0.475362 10.1804 0.666401C9.81243 0.859674 9.58203 1.23952 9.58203 1.65511V46.3426C9.58203 46.7582 9.81243 47.1392 10.1804 47.3324C10.3437 47.4173 10.5226 47.4598 10.7005 47.4598C10.923 47.4598 11.1445 47.3928 11.3357 47.2621L43.7699 24.9183C44.073 24.7094 44.2531 24.3664 44.2531 23.9989C44.2531 23.6313 44.0719 23.2883 43.7699 23.0794Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_4434_22253">
+                                                                <rect width="46.9726" height="46.9208" fill="white"
+                                                                    transform="translate(0.632812 0.539062)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <picture class="video__img">
+                                                    <img src="images/videos-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="videos-swiper__slide videos-slide swiper-slide">
+                                            <a class="videos-slide__video video" href="videos/video.mp4"
+                                                data-fancybox="videos">
+                                                <div class="video__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_4434_22253)">
+                                                            <path
+                                                                d="M43.7699 23.0794L11.3357 0.735666C10.9924 0.49994 10.5472 0.475362 10.1804 0.666401C9.81243 0.859674 9.58203 1.23952 9.58203 1.65511V46.3426C9.58203 46.7582 9.81243 47.1392 10.1804 47.3324C10.3437 47.4173 10.5226 47.4598 10.7005 47.4598C10.923 47.4598 11.1445 47.3928 11.3357 47.2621L43.7699 24.9183C44.073 24.7094 44.2531 24.3664 44.2531 23.9989C44.2531 23.6313 44.0719 23.2883 43.7699 23.0794Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_4434_22253">
+                                                                <rect width="46.9726" height="46.9208" fill="white"
+                                                                    transform="translate(0.632812 0.539062)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <picture class="video__img">
+                                                    <img src="images/videos-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="videos-swiper__slide videos-slide swiper-slide">
+                                            <a class="videos-slide__video video" href="videos/video.mp4"
+                                                data-fancybox="videos">
+                                                <div class="video__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_4434_22253)">
+                                                            <path
+                                                                d="M43.7699 23.0794L11.3357 0.735666C10.9924 0.49994 10.5472 0.475362 10.1804 0.666401C9.81243 0.859674 9.58203 1.23952 9.58203 1.65511V46.3426C9.58203 46.7582 9.81243 47.1392 10.1804 47.3324C10.3437 47.4173 10.5226 47.4598 10.7005 47.4598C10.923 47.4598 11.1445 47.3928 11.3357 47.2621L43.7699 24.9183C44.073 24.7094 44.2531 24.3664 44.2531 23.9989C44.2531 23.6313 44.0719 23.2883 43.7699 23.0794Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_4434_22253">
+                                                                <rect width="46.9726" height="46.9208" fill="white"
+                                                                    transform="translate(0.632812 0.539062)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <picture class="video__img">
+                                                    <img src="images/videos-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="videos-swiper__slide videos-slide swiper-slide">
+                                            <a class="videos-slide__video video" href="videos/video.mp4"
+                                                data-fancybox="videos">
+                                                <div class="video__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_4434_22253)">
+                                                            <path
+                                                                d="M43.7699 23.0794L11.3357 0.735666C10.9924 0.49994 10.5472 0.475362 10.1804 0.666401C9.81243 0.859674 9.58203 1.23952 9.58203 1.65511V46.3426C9.58203 46.7582 9.81243 47.1392 10.1804 47.3324C10.3437 47.4173 10.5226 47.4598 10.7005 47.4598C10.923 47.4598 11.1445 47.3928 11.3357 47.2621L43.7699 24.9183C44.073 24.7094 44.2531 24.3664 44.2531 23.9989C44.2531 23.6313 44.0719 23.2883 43.7699 23.0794Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_4434_22253">
+                                                                <rect width="46.9726" height="46.9208" fill="white"
+                                                                    transform="translate(0.632812 0.539062)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <picture class="video__img">
+                                                    <img src="images/videos-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="videos-swiper__navigation navigation">
+                                        <div class="navigation__arrows arrows">
+                                            <div class="arrows__arrow arrow arrow--blue arrow--prev">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.95713e-09 18.4999L5 13L5 17.4175L5 19.5824L5 24L7.95713e-09 18.4999Z"
+                                                        fill="#001E88" />
+                                                    <line y1="-0.5" x2="31" y2="-0.5"
+                                                        transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 5 18)"
+                                                        stroke="#001E88" />
+                                                </svg>
+                                            </div>
+                                            <div class="arrows__arrow arrow arrow--blue arrow--next">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                        fill="#001E88" />
+                                                    <line x1="31" y1="18.5" x2="-4.37114e-08" y2="18.5"
+                                                        stroke="#001E88" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__description description description--last">
+                <div class="container">
+                    <div class="description__inner">
+                        <div class="description__titling description-titling">
+                            <h2 class="description-titling__title">
+                                Отзывы
+                            </h2>
+                        </div>
+                        <div class="description__content description-content">
+                            <div class="description-content__recalls recalls">
+                                <div class="recalls__swiper recalls-swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                            <a class="recalls-slide__recall recall" href="images/recalls-img-1.jpg"
+                                                data-fancybox="recalls">
+                                                <picture class="recall__img">
+                                                    <img src="images/recalls-img-1.jpg" alt="img">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="recalls__link button button--blue" href="#">
+                                    <span>
+                                        Больше отзывов
+                                    </span>
+                                    <svg width="36" height="14" viewBox="0 0 36 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4431_42245)">
+                                            <path d="M36 7.49989L31 2V6.41748L31 8.58245L31 13L36 7.49989Z"
+                                                fill="#001E88" />
+                                            <line x1="31" y1="7.5" x2="4.37114e-08" y2="7.5" stroke="#001E88" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4431_42245">
+                                                <rect width="36" height="14" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

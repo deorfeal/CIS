@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="topbar topbar--white">
+        <div class="container">
+            <div class="topbar__inner">
+                <a class="topbar__logo logo" href="#">
+                    <img src="images/logo.svg" alt="logo">
+                    <img src="images/logo-secondary.svg" alt="logo">
+                </a>
+                <div class="topbar__lang lang">
+                    <div class="lang__current">
+                        <span>
+                            RU
+                        </span>
+                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z" fill="#212329" />
+                        </svg>
+                    </div>
+                    <ul class="lang__list lang-list">
+                        <li class="lang-list__item lang-item">
+                            <a class="lang-item__link" href="#">
+                                Қаз
+                            </a>
+                        </li>
+                        <li class="lang-list__item lang-item">
+                            <a class="lang-item__link" href="#">
+                                Рус
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="topbar__menu menu">
+                    <ul class="menu__list menu-list">
+                        <li class="menu-list__item menu-item">
+                            <div class="menu-item__dropdown dropdown">
+                                <div class="dropdown__head">
+                                    <span>
+                                        О компании
+                                    </span>
+                                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z"
+                                            fill="#212329" />
+                                    </svg>
+                                </div>
+                                <ul class="dropdown__list dropdown-list">
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Клиенты
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Партнёры
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Оборудование
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Безопасность и качество
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <div class="menu-item__dropdown dropdown">
+                                <div class="dropdown__head">
+                                    <span>
+                                        Направления деятельности
+                                    </span>
+                                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z"
+                                            fill="#212329" />
+                                    </svg>
+                                </div>
+                                <ul class="dropdown__list dropdown-list">
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Гидроразрыв пластов
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Многостадийный ГРП
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item dropdown-item">
+                                        <a class="dropdown-item__link dropdown-link" href="#">
+                                            Инженерное сопровождение ГРП
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <a class="menu-item__link menu-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <a class="menu-item__link menu-link" href="#">
+                                Кейсы
+                            </a>
+                        </li>
+                        <li class="menu-list__item menu-item">
+                            <a class="menu-item__link menu-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="topbar__mail mail" href="mailto:info@cis.kz">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.8567 1.54688H1.14185C0.965969 1.54688 0.801311 1.59012 0.652344 1.66139L6.47388 7.48292L7.77868 6.22896C7.77868 6.22896 7.77878 6.22883 7.77881 6.22878C7.77883 6.22873 7.77893 6.22868 7.77893 6.22868L12.3464 1.66149C12.1974 1.59017 12.0326 1.54688 11.8567 1.54688Z"
+                            fill="#A31E08" />
+                        <path
+                            d="M12.8841 2.20312L8.58594 6.5011L12.884 10.7991C12.9553 10.6502 12.9985 10.4855 12.9985 10.3096V2.69245C12.9985 2.51667 12.9554 2.35204 12.8841 2.20312Z"
+                            fill="#A31E08" />
+                        <path
+                            d="M0.114512 2.20312C0.0432402 2.35209 0 2.51675 0 2.69263V10.3098C0 10.4856 0.0431895 10.6503 0.11441 10.7992L4.41261 6.50122L0.114512 2.20312Z"
+                            fill="#A31E08" />
+                        <path
+                            d="M8.04833 7.03911L6.74335 8.29323C6.66896 8.36763 6.57151 8.40482 6.47408 8.40482C6.37666 8.40482 6.27918 8.36763 6.20482 8.29323L4.95062 7.03906L0.652344 11.3371C0.801336 11.4084 0.966096 11.4517 1.14203 11.4517H11.8569C12.0328 11.4517 12.1974 11.4084 12.3464 11.3372L8.04833 7.03911Z"
+                            fill="#A31E08" />
+                    </svg>
+                    <span>
+                        info@cis.kz
+                    </span>
+                </a>
+                <a class="topbar__phone phone" href="tel:+77122317437">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4434_3691)">
+                            <path
+                                d="M12.6442 9.54069L10.8301 7.7265C10.1821 7.07858 9.08066 7.33777 8.82149 8.18005C8.62711 8.76321 7.97919 9.08717 7.39606 8.95756C6.10021 8.6336 4.35081 6.94899 4.02685 5.58835C3.83247 5.00519 4.22122 4.35727 4.80436 4.16292C5.64666 3.90375 5.90583 2.80227 5.2579 2.15435L3.44372 0.34016C2.92538 -0.113387 2.14787 -0.113387 1.69432 0.34016L0.463262 1.57122C-0.767795 2.86707 0.592847 6.30107 3.63809 9.34631C6.68334 12.3916 10.1173 13.817 11.4132 12.5211L12.6442 11.2901C13.0978 10.7717 13.0978 9.99424 12.6442 9.54069Z"
+                                fill="#A31E08" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_4434_3691">
+                                <rect width="13" height="13" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span>
+                        +7 (7122) 31 74 37
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading heading">
+                <div class="heading__swiper heading-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="heading-swiper__slide heading-slide swiper-slide">
+                            <div class="heading-slide__footage footage">
+                                <video class="footage__view" src="videos/video.mp4" autoplay muted loop
+                                    preview=""></video>
+                            </div>
+                            <div class="container">
+                                <div class="heading-slide__inner">
+                                    <div class="heading-slide__digits digits">
+                                        <div class="digits__titling digits-titling">
+                                            <h1 class="digits-titling__title">
+                                                CASPIAN INTEGRATED SERVICES
+                                            </h1>
+                                            <p class="digits-titling__subtitle">
+                                                Оказываем услуги по проведению гидроразрыва пласта, имеет собственный
+                                                современный флот
+                                            </p>
+                                        </div>
+                                        <ul class="digits__list digits-list">
+                                            <li class="digits-list__item digits-item">
+                                                <div class="digits-item__digit">
+                                                    2500
+                                                </div>
+                                                <div class="digits-item__text">
+                                                    Успешных проектов
+                                                </div>
+                                            </li>
+                                            <li class="digits-list__item digits-item">
+                                                <div class="digits-item__digit">
+                                                    756
+                                                </div>
+                                                <div class="digits-item__text">
+                                                    Единиц техники
+                                                </div>
+                                            </li>
+                                            <li class="digits-list__item digits-item">
+                                                <div class="digits-item__digit">
+                                                    1500
+                                                </div>
+                                                <div class="digits-item__text">
+                                                    Сотрудников
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a class="digits__link button button--white" href="#">
+                                            <span>
+                                                Подробнее
+                                            </span>
+                                            <svg width="36" height="14" viewBox="0 0 36 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_4431_41695)">
+                                                    <path d="M36 7.49989L31 2V6.41748L31 8.58245L31 13L36 7.49989Z"
+                                                        fill="white" />
+                                                    <line x1="31" y1="7.5" x2="4.37114e-08" y2="7.5" stroke="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_4431_41695">
+                                                        <rect width="36" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heading-swiper__slide heading-slide swiper-slide">
+                            <div class="heading-slide__footage footage">
+                                <video class="footage__view" src="videos/video.mp4" autoplay muted loop
+                                    preview=""></video>
+                            </div>
+                            <div class="container">
+                                <div class="heading-slide__inner">
+                                    <div class="heading-slide__specializations specializations">
+                                        <div class="specializations__titling specializations-titling">
+                                            <h2 class="specializations-titling__title">
+                                                CASPIAN INTEGRATED SERVICES
+                                            </h2>
+                                        </div>
+                                        <ul class="specializations__list specializations-list">
+                                            <li class="specializations-list__item specializations-item">
+                                                <a class="specializations-item__inner" href="#">
+                                                    <h5 class="specializations-item__title">
+                                                        Первый вид деятельности
+                                                    </h5>
+                                                    <p class="specializations-item__text">
+                                                        Оказываем услуги по проведению гидроразрыва пласта, имеет
+                                                        собственный современный флот
+                                                    </p>
+                                                    <div class="specializations-item__arrow">
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                                fill="white" />
+                                                            <line x1="31" y1="18.5" x2="-4.37114e-08" y2="18.5"
+                                                                stroke="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="specializations-list__item specializations-item">
+                                                <a class="specializations-item__inner" href="#">
+                                                    <h5 class="specializations-item__title">
+                                                        Второй вид деятельности
+                                                    </h5>
+                                                    <p class="specializations-item__text">
+                                                        Оказываем услуги по проведению гидроразрыва пласта, имеет
+                                                        собственный современный флот
+                                                    </p>
+                                                    <div class="specializations-item__arrow">
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                                fill="white" />
+                                                            <line x1="31" y1="18.5" x2="-4.37114e-08" y2="18.5"
+                                                                stroke="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="specializations-list__item specializations-item">
+                                                <a class="specializations-item__inner" href="#">
+                                                    <h5 class="specializations-item__title">
+                                                        Третий вид деятельности
+                                                    </h5>
+                                                    <p class="specializations-item__text">
+                                                        Оказываем услуги по проведению гидроразрыва пласта, имеет
+                                                        собственный современный флот
+                                                    </p>
+                                                    <div class="specializations-item__arrow">
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M36 18.4999L31 13L31 17.4175L31 19.5824L31 24L36 18.4999Z"
+                                                                fill="white" />
+                                                            <line x1="31" y1="18.5" x2="-4.37114e-08" y2="18.5"
+                                                                stroke="white" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading-swiper__navigation navigation">
+                        <div class="navigation__pagination pagination"></div>
+                        <div class="navigation__arrows arrows arrows--vertical">
+                            <div class="arrows__arrow arrow arrow--white arrow--prev">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4431_41689)">
+                                        <path
+                                            d="M17.5001 -1.31583e-07L23 5L18.5825 5L16.4176 5L12 5L17.5001 -1.31583e-07Z"
+                                            fill="white" />
+                                        <line y1="-0.5" x2="31" y2="-0.5"
+                                            transform="matrix(4.37114e-08 1 1 -4.37114e-08 18 5)" stroke="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4431_41689">
+                                            <rect width="36" height="36" fill="white"
+                                                transform="matrix(-1.31134e-07 -1 -1 1.31134e-07 36 36)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="arrows__arrow arrow arrow--white arrow--next">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4431_41684)">
+                                        <path d="M17.5001 36L23 31L18.5825 31L16.4176 31L12 31L17.5001 36Z"
+                                            fill="white" />
+                                        <line x1="17.5" y1="31" x2="17.5" y2="-6.55671e-08" stroke="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4431_41684">
+                                            <rect width="36" height="36" fill="white"
+                                                transform="translate(36) rotate(90)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
